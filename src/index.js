@@ -13,7 +13,7 @@ app.use('/bookmarks', bookmarksRouter)
 
 app.get('/', (req, res) => res.json({ status: 'ok' }))
 
-const MONGO ='mongodb://localhost:27017/bookmarksdb'
+const MONGO ='mongodb+srv://praveenkumarsjob_db_user:Praveen2626@demodev.pplr0zb.mongodb.net/bookmarksdb'
 const PORT = 4000
 
 mongoose.connect(MONGO, { autoIndex: true }).then(async () => {
